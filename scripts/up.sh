@@ -5,7 +5,7 @@
 
 set -e
 
-if [[ "$(hak-env)" == "Linux" ]]; then
+if [[ "$(composekit-env)" == "Linux" ]]; then
   sudo docker-compose up -d
 else
   docker-compose up -d
