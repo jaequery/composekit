@@ -1,0 +1,37 @@
+{
+  "name": "composekit",
+  "version": "0.0.1",
+  "description": "CLI for quickly spinning up docker projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaequery/composekit.git"
+  },
+  "keywords": [
+    "CLI",
+    "Node",
+    "Docker",
+    "Dory",
+    "Dinghy"
+  ],
+  "author": "Jae Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaequery/composekit/issues"
+  },
+  "bin": {
+    "composekit": "./scripts/composekit.sh",
+    "composekit-on": "./scripts/on.sh",
+    "composekit-off": "./scripts/off.sh",
+    "composekit-up": "./scripts/up.sh",
+    "composekit-install": "./scripts/install.sh",
+    "composekit-uninstall": "./scripts/uninstall.sh",
+    "composekit-env": "./scripts/env.sh",
+    "composekit-clone": "./scripts/clone.sh",
+    "composekit-test": "./scripts/test.sh"
+  },
+  "homepage": "https://github.com/jaequery/composekit#readme"
+}
