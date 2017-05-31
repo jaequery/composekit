@@ -38,9 +38,6 @@ else
   elif [ -n "$BASH_VERSION" ]; then
      # assume Bash    
      echo "$(dinghy env)" >> ~/.bash_profile
-
-  else
-     # asume something else
   fi
 
 fi
