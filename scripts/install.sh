@@ -3,7 +3,6 @@
 # Please see LICENSE file for details.
 #
 
-
 if [ -x "$(command -v docker)" ]; then
   echo "Docker detected on the machine. Please uninstall before proceeding."
   exit 1
@@ -24,21 +23,14 @@ if [[ "$(composekit-env)" == "Linux" ]]; then
   fi
   sudo gem install dory
 
-
 else
   brew install docker docker-machine docker-compose
   brew tap codekitchen/dinghy
   brew install dinghy
   dinghy create --provider xhyve
 
-  if [ -n "$ZSH_VERSION" ]; then
-     # assume Zsh
-     echo "$(dinghy env)" >> ~/.zshrc
-
-  elif [ -n "$BASH_VERSION" ]; then
-     # assume Bash    
-     echo "$(dinghy env)" >> ~/.bash_profile
-  fi
+  echo "$(dinghy env)" >> ~/.zshrc
+  echo "$(dinghy env)" >> ~/.bash_profile
 
 fi
 
