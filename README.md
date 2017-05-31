@@ -16,7 +16,7 @@ A Node.js script to work with docker repositories.
    composekit: A simple docker-based project starter
 
    Usage: composekit install|on|off|up|uninstall
-   Usage: composekit clone jaequery/honeybadger.git project-name
+   Usage: composekit clone jaequery/honeybadger project-name
 
    composekit install   - Install docker, docker-compose, docker-machine on the machine
    composekit on|off    - Turn on|off the docker service
