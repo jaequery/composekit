@@ -11,7 +11,7 @@ git clone http://github.com/${GIT_PATH}.git ${PROJECT_DIR}
 cd ${PROJECT_DIR}
 
 if [[ -f docker-compose.yml ]]; then
-  sed -i -e "s/VIRTUAL_HOST=(.*)/VIRTUAL_HOST=${PROJECT_DIR}.docker/" docker-compose.yml
+  sed -i -e "s/VIRTUAL_HOST=.*/VIRTUAL_HOST=${PROJECT_DIR}.docker/" docker-compose.yml
 else
   echo "Unable to find docker-compose.yml"
   exit 1
