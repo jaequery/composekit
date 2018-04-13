@@ -33,7 +33,7 @@ A Node.js script to work with docker repositories.
 ```
 composekit clone jaequery/jasis mywebsite
 cd mywebsite
-docker-compose up -d
+docker-compose up
 ```
 
 Voila, head over to http://mywebsite.docker to view your launched website!
