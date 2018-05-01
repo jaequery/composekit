@@ -1,6 +1,6 @@
 {
   "name": "composekit",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "CLI for quickly spinning up docker projects.",
   "main": "index.js",
   "scripts": {
