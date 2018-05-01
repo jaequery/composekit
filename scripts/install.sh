@@ -27,6 +27,9 @@ else
   brew install docker docker-machine docker-compose
   brew tap codekitchen/dinghy
   brew install dinghy
+  brew install docker-machine-driver-xhyve
+  sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+  sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
   dinghy create --provider xhyve
 
   echo "$(dinghy env)" >> ~/.zshrc
