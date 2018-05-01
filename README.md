@@ -4,10 +4,11 @@ A Node.js script to work with docker repositories.
 # Installation
 
    ```sh
-   $ git clone http://github.com/jaequery/composekit.git
-   $ cd composekit
-   $ ./install.sh
+   $ npm install -g composekit
+   $ composekit install
    ```
+   
+   Just follow the instructions
 
 # Usage
 
@@ -16,7 +17,6 @@ A Node.js script to work with docker repositories.
    composekit: A simple docker-based project starter
 
    Usage: composekit install|on|off|up|uninstall
-   Usage: composekit clone jaequery/honeybadger project-name
 
    composekit install   - Install docker, docker-compose, docker-machine on the machine
    composekit on|off    - Turn on|off the docker service
@@ -26,3 +26,16 @@ A Node.js script to work with docker repositories.
    composekit test      - Test the operation of composekit on your machine
 
    ```
+
+# Example
+
+```
+composekit clone jaequery/jasis mywebsite
+cd mywebsite
+docker-compose up
+```
+
+Voila, head over to http://mywebsite.docker to view your launched website!
+
+
+
